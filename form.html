@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to left, #4a90e2, #6ec6ca);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #fff;
+            width: 60%;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .row .input-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .gender-section {
+            margin: 20px 0;
+        }
+
+        .gender-options {
+            display: flex;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        .register-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #4a6cf7;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .register-btn:hover {
+            background: #3957d8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration</h2>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" placeholder="Enter your username">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="number" placeholder="Enter your number">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password">
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm your password">
+            </div>
+        </div>
+
+        <div class="gender-section">
+            <label>Gender</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Prefer not to say</label>
+            </div>
+        </div>
+
+        <button class="register-btn">Register</button>
+    </div>
+
+</body>
+</html>
